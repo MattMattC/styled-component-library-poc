@@ -9,7 +9,8 @@
         "build": "rollup -c",
         "storybook": "start-storybook",
         "prepare": "npm run build",
-        "test": "jest"
+        "test": "jest",
+        "deploy": "build-storybook -c .storybook -o public && gh-pages -d public -b master"
     },
     "repository": {
         "type": "git",
@@ -32,6 +33,7 @@
         "@storybook/addon-viewport": "^5.2.1",
         "@storybook/react": "^5.2.1",
         "babel-loader": "^8.0.6",
+        "gh-pages": "^2.1.1",
         "jest": "^24.9.0",
         "react-test-renderer": "^16.10.1",
         "rollup": "^1.21.4",
