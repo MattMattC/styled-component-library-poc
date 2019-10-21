@@ -10,7 +10,7 @@
         "storybook": "start-storybook",
         "prepare": "npm run build",
         "test": "jest",
-        "deploy": "build-storybook -c .storybook -o public && gh-pages -d public -b master"
+        "deploy": "build-storybook -c .storybook -o public && gh-pages -d public -b public"
     },
     "repository": {
         "type": "git",
